@@ -42,11 +42,15 @@
             but0 = new Button();
             resta = new Button();
             pantalla = new TextBox();
+            Multiplicar = new Button();
+            button2 = new Button();
+            Clear = new Button();
             SuspendLayout();
             // 
             // but1
             // 
-            but1.Location = new Point(12, 121);
+            but1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            but1.Location = new Point(15, 87);
             but1.Name = "but1";
             but1.Size = new Size(78, 66);
             but1.TabIndex = 0;
@@ -56,7 +60,8 @@
             // 
             // but2
             // 
-            but2.Location = new Point(96, 121);
+            but2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            but2.Location = new Point(99, 87);
             but2.Name = "but2";
             but2.Size = new Size(78, 66);
             but2.TabIndex = 1;
@@ -67,9 +72,10 @@
             // suma
             // 
             suma.BackColor = Color.DeepSkyBlue;
-            suma.Location = new Point(264, 121);
+            suma.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            suma.Location = new Point(267, 159);
             suma.Name = "suma";
-            suma.Size = new Size(78, 167);
+            suma.Size = new Size(78, 95);
             suma.TabIndex = 2;
             suma.Text = "+";
             suma.UseVisualStyleBackColor = false;
@@ -77,7 +83,8 @@
             // 
             // but9
             // 
-            but9.Location = new Point(180, 265);
+            but9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            but9.Location = new Point(183, 231);
             but9.Name = "but9";
             but9.Size = new Size(78, 66);
             but9.TabIndex = 3;
@@ -87,7 +94,8 @@
             // 
             // but8
             // 
-            but8.Location = new Point(96, 265);
+            but8.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            but8.Location = new Point(99, 231);
             but8.Name = "but8";
             but8.Size = new Size(78, 66);
             but8.TabIndex = 4;
@@ -97,7 +105,8 @@
             // 
             // but7
             // 
-            but7.Location = new Point(12, 265);
+            but7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            but7.Location = new Point(15, 231);
             but7.Name = "but7";
             but7.Size = new Size(78, 66);
             but7.TabIndex = 5;
@@ -107,7 +116,8 @@
             // 
             // but6
             // 
-            but6.Location = new Point(180, 193);
+            but6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            but6.Location = new Point(183, 159);
             but6.Name = "but6";
             but6.Size = new Size(78, 66);
             but6.TabIndex = 6;
@@ -117,7 +127,8 @@
             // 
             // but4
             // 
-            but4.Location = new Point(12, 193);
+            but4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            but4.Location = new Point(15, 159);
             but4.Name = "but4";
             but4.Size = new Size(78, 66);
             but4.TabIndex = 7;
@@ -127,7 +138,8 @@
             // 
             // but3
             // 
-            but3.Location = new Point(180, 121);
+            but3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            but3.Location = new Point(183, 87);
             but3.Name = "but3";
             but3.Size = new Size(78, 66);
             but3.TabIndex = 8;
@@ -137,7 +149,8 @@
             // 
             // but5
             // 
-            but5.Location = new Point(96, 193);
+            but5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            but5.Location = new Point(99, 159);
             but5.Name = "but5";
             but5.Size = new Size(78, 66);
             but5.TabIndex = 9;
@@ -148,9 +161,10 @@
             // igual
             // 
             igual.BackColor = Color.FromArgb(128, 255, 128);
-            igual.Location = new Point(96, 337);
+            igual.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            igual.Location = new Point(99, 375);
             igual.Name = "igual";
-            igual.Size = new Size(162, 66);
+            igual.Size = new Size(246, 66);
             igual.TabIndex = 10;
             igual.Text = "=";
             igual.UseVisualStyleBackColor = false;
@@ -158,7 +172,8 @@
             // 
             // but0
             // 
-            but0.Location = new Point(12, 337);
+            but0.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            but0.Location = new Point(15, 303);
             but0.Name = "but0";
             but0.Size = new Size(78, 66);
             but0.TabIndex = 11;
@@ -169,7 +184,8 @@
             // resta
             // 
             resta.BackColor = Color.FromArgb(255, 128, 128);
-            resta.Location = new Point(264, 294);
+            resta.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            resta.Location = new Point(267, 260);
             resta.Name = "resta";
             resta.Size = new Size(78, 109);
             resta.TabIndex = 12;
@@ -181,7 +197,7 @@
             // 
             pantalla.BorderStyle = BorderStyle.FixedSingle;
             pantalla.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            pantalla.Location = new Point(12, 36);
+            pantalla.Location = new Point(12, 12);
             pantalla.Name = "pantalla";
             pantalla.ReadOnly = true;
             pantalla.Size = new Size(333, 57);
@@ -191,12 +207,49 @@
             pantalla.Click += Numeros_Click;
             pantalla.TextChanged += pantalla_TextChanged;
             // 
+            // Multiplicar
+            // 
+            Multiplicar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            Multiplicar.Location = new Point(99, 303);
+            Multiplicar.Name = "Multiplicar";
+            Multiplicar.Size = new Size(162, 66);
+            Multiplicar.TabIndex = 14;
+            Multiplicar.Text = "X";
+            Multiplicar.UseVisualStyleBackColor = true;
+            Multiplicar.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            button2.Location = new Point(15, 375);
+            button2.Name = "button2";
+            button2.Size = new Size(78, 66);
+            button2.TabIndex = 15;
+            button2.Text = "/";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // Clear
+            // 
+            Clear.BackColor = Color.White;
+            Clear.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            Clear.Location = new Point(267, 87);
+            Clear.Name = "Clear";
+            Clear.Size = new Size(78, 66);
+            Clear.TabIndex = 16;
+            Clear.Text = "C";
+            Clear.UseVisualStyleBackColor = false;
+            Clear.Click += Clear_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(128, 128, 255);
-            ClientSize = new Size(350, 417);
+            ClientSize = new Size(359, 447);
+            Controls.Add(Clear);
+            Controls.Add(button2);
+            Controls.Add(Multiplicar);
             Controls.Add(pantalla);
             Controls.Add(resta);
             Controls.Add(but0);
@@ -211,7 +264,10 @@
             Controls.Add(suma);
             Controls.Add(but2);
             Controls.Add(but1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
@@ -234,5 +290,8 @@
         private Button but0;
         private Button resta;
         private TextBox pantalla;
+        private Button Multiplicar;
+        private Button button2;
+        private Button Clear;
     }
 }
