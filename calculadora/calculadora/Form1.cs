@@ -2,12 +2,12 @@ using System.Diagnostics.Eventing.Reader;
 
 namespace calculadora
 {
-    public partial class Form1 : Form
+    public partial class Carculadora : Form
     {
         double numero1 = 0;
         string operacion;
 
-        public Form1()
+        public Carculadora()
         {
             InitializeComponent();
 

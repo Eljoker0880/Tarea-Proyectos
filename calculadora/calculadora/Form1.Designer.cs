@@ -1,6 +1,6 @@
 ﻿namespace calculadora
 {
-    partial class Form1
+    partial class Carculadora
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carculadora));
             but1 = new Button();
             but2 = new Button();
             suma = new Button();
@@ -43,7 +44,7 @@
             resta = new Button();
             pantalla = new TextBox();
             Multiplicar = new Button();
-            button2 = new Button();
+            dividir = new Button();
             Clear = new Button();
             SuspendLayout();
             // 
@@ -75,7 +76,7 @@
             suma.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             suma.Location = new Point(267, 159);
             suma.Name = "suma";
-            suma.Size = new Size(78, 95);
+            suma.Size = new Size(78, 105);
             suma.TabIndex = 2;
             suma.Text = "+";
             suma.UseVisualStyleBackColor = false;
@@ -185,9 +186,9 @@
             // 
             resta.BackColor = Color.FromArgb(255, 128, 128);
             resta.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            resta.Location = new Point(267, 260);
+            resta.Location = new Point(267, 270);
             resta.Name = "resta";
-            resta.Size = new Size(78, 109);
+            resta.Size = new Size(78, 99);
             resta.TabIndex = 12;
             resta.Text = "-";
             resta.UseVisualStyleBackColor = false;
@@ -218,16 +219,16 @@
             Multiplicar.UseVisualStyleBackColor = true;
             Multiplicar.Click += button1_Click;
             // 
-            // button2
+            // dividir
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button2.Location = new Point(15, 375);
-            button2.Name = "button2";
-            button2.Size = new Size(78, 66);
-            button2.TabIndex = 15;
-            button2.Text = "/";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            dividir.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dividir.Location = new Point(15, 375);
+            dividir.Name = "dividir";
+            dividir.Size = new Size(78, 66);
+            dividir.TabIndex = 15;
+            dividir.Text = "/";
+            dividir.UseVisualStyleBackColor = true;
+            dividir.Click += button2_Click;
             // 
             // Clear
             // 
@@ -241,14 +242,14 @@
             Clear.UseVisualStyleBackColor = false;
             Clear.Click += Clear_Click;
             // 
-            // Form1
+            // Carculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(128, 128, 255);
             ClientSize = new Size(359, 447);
             Controls.Add(Clear);
-            Controls.Add(button2);
+            Controls.Add(dividir);
             Controls.Add(Multiplicar);
             Controls.Add(pantalla);
             Controls.Add(resta);
@@ -264,11 +265,12 @@
             Controls.Add(suma);
             Controls.Add(but2);
             Controls.Add(but1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "Form1";
+            Name = "Carculadora";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Carculadora";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -291,7 +293,7 @@
         private Button resta;
         private TextBox pantalla;
         private Button Multiplicar;
-        private Button button2;
+        private Button dividir;
         private Button Clear;
     }
 }

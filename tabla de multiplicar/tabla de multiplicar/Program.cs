@@ -1,4 +1,4 @@
-namespace calculadora
+namespace tabla_de_multiplicar
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace calculadora
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Carculadora());
+            Application.Run(new Form1());
         }
     }
 }
