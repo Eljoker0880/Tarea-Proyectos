@@ -59,9 +59,9 @@
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(375, 32);
+            label1.Size = new Size(359, 32);
             label1.TabIndex = 2;
-            label1.Text = "Verificar Cantidad De Numeros ";
+            label1.Text = "Verificar Cantidad De Palabras";
             // 
             // label2
             // 
@@ -69,9 +69,9 @@
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(11, 115);
             label2.Name = "label2";
-            label2.Size = new Size(153, 25);
+            label2.Size = new Size(157, 25);
             label2.TabIndex = 3;
-            label2.Text = "Colocar Digitos:";
+            label2.Text = "Colocar Palabra:";
             // 
             // Form1
             // 
